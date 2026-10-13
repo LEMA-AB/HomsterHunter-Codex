@@ -1,0 +1,171 @@
+/* ===== Cazadores Wiki: hoja de estilos propia ===== */
+
+/* --- Paleta y tipografías (variables CSS3) --- */
+:root {
+  --color-fondo: #14231d;
+  --color-superficie: #1d3329;
+  --color-papel: #efe6d2;
+  --color-texto: #f3ecda;
+  --color-texto-suave: #c4cdb8;
+  --color-brasa: #f08a3c;
+  --color-borde: #3b5648;
+  --fuente-titulos: Georgia, "Times New Roman", serif;
+  --fuente-texto: "Segoe UI", Roboto, Arial, sans-serif;
+}
+
+/* --- Base --- */
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  background: var(--color-fondo);
+  color: var(--color-texto);
+  font-family: var(--fuente-texto);
+  line-height: 1.65;
+}
+img { max-width: 100%; height: auto; display: block; }
+a { color: var(--color-brasa); }
+a:focus-visible, button:focus-visible, input:focus-visible,
+select:focus-visible, textarea:focus-visible, summary:focus-visible {
+  outline: 3px solid var(--color-papel);
+  outline-offset: 3px;
+}
+
+/* --- Cabecera y menú --- */
+.cabecera {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: rgba(20, 35, 29, 0.92);
+  backdrop-filter: blur(6px);
+  border-bottom: 2px solid var(--color-borde);
+}
+.cabecera__interior {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0.6rem 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem 1.5rem;
+}
+.marca {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  color: var(--color-papel);
+  font-family: var(--fuente-titulos);
+  font-size: 1.35rem;
+  text-decoration: none;
+}
+.menu { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 0.3rem; }
+.menu a {
+  display: block;
+  padding: 0.4rem 0.9rem;
+  border-radius: 999px;
+  color: var(--color-texto);
+  text-decoration: none;
+}
+.menu a:hover { background: var(--color-superficie); }
+.menu a[aria-current="page"] { background: var(--color-brasa); color: #1a1208; font-weight: 700; }
+
+/* --- Contenido principal --- */
+main { max-width: 1100px; margin: 0 auto; padding: 1.5rem 1rem 3rem; }
+.titulo-pagina {
+  font-family: var(--fuente-titulos);
+  font-size: clamp(2rem, 6vw, 3.4rem);
+  color: var(--color-papel);
+  margin: 1rem 0 0.5rem;
+  line-height: 1.15;
+}
+h2 { font-family: var(--fuente-titulos); font-size: 1.7rem; color: var(--color-papel); margin-top: 2.5rem; }
+h3 { font-family: var(--fuente-titulos); color: var(--color-brasa); margin: 0 0 0.3rem; }
+.entradilla { font-size: 1.15rem; color: var(--color-texto-suave); max-width: 62ch; }
+
+/* --- Portada --- */
+.portada {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 1.5rem;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.portada img { border-radius: 12px; border: 2px solid var(--color-borde); }
+
+/* --- Rejilla de tarjetas --- */
+.rejilla { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1.2rem; }
+.tarjeta {
+  background: var(--color-superficie);
+  border: 1px solid var(--color-borde);
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 0;
+}
+.tarjeta img { aspect-ratio: 16 / 10; object-fit: cover; width: 100%; }
+.tarjeta__texto { padding: 0.9rem 1.1rem 1.2rem; }
+.tarjeta__texto p { margin: 0.3rem 0; color: var(--color-texto-suave); }
+.etiqueta {
+  display: inline-block;
+  padding: 0.1rem 0.6rem;
+  border: 1px solid var(--color-brasa);
+  border-radius: 4px;
+  color: var(--color-brasa);
+  font-size: 0.85rem;
+}
+
+/* --- Tablas --- */
+.tabla-contenedor { overflow-x: auto; border: 1px solid var(--color-borde); border-radius: 10px; }
+table { width: 100%; border-collapse: collapse; min-width: 520px; }
+th, td { padding: 0.7rem 1rem; text-align: left; border-bottom: 1px solid var(--color-borde); }
+thead th { background: var(--color-papel); color: #1a1a14; }
+tbody tr:nth-child(even) { background: var(--color-superficie); }
+
+/* --- Desplegables y pasos --- */
+details {
+  background: var(--color-superficie);
+  border: 1px solid var(--color-borde);
+  border-radius: 8px;
+  padding: 0.8rem 1.1rem;
+  margin-bottom: 0.7rem;
+}
+summary { cursor: pointer; font-weight: 700; color: var(--color-papel); }
+details[open] summary { color: var(--color-brasa); margin-bottom: 0.5rem; }
+
+/* --- Formulario --- */
+.formulario { display: grid; gap: 1rem; max-width: 640px; }
+.formulario label { display: block; font-weight: 600; margin-bottom: 0.25rem; }
+.formulario input[type="text"], .formulario input[type="email"],
+.formulario select, .formulario textarea {
+  width: 100%;
+  padding: 0.7rem;
+  border-radius: 6px;
+  border: 2px solid var(--color-borde);
+  background: var(--color-papel);
+  color: #1a1a14;
+  font: inherit;
+}
+.boton {
+  justify-self: start;
+  padding: 0.8rem 1.8rem;
+  border: 0;
+  border-radius: 6px;
+  background: var(--color-brasa);
+  color: #1a1208;
+  font-weight: 700;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.boton:hover { background: var(--color-papel); }
+
+/* --- Pie --- */
+.pie { border-top: 2px solid var(--color-borde); text-align: center; padding: 1.5rem 1rem; color: var(--color-texto-suave); }
+
+/* --- Adaptación a pantallas pequeñas (hasta 400px y menos) --- */
+@media (max-width: 760px) {
+  .portada { grid-template-columns: 1fr; }
+  .cabecera { position: static; }
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+}

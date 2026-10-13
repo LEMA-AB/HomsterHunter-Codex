@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Formulario para contactar con el equipo de Cazadores Wiki, enviar comentarios, proponer monstruos nuevos o avisar de errores.">
+  <title>Contacto | Envía comentarios y sugerencias al equipo de Cazadores Wiki</title>
+  <link rel="icon" href="../img/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../../Diseño/Estilos/estilos.css">
+</head>
+<body>
+  <!-- Cabecera con logotipo y menú principal -->
+  <header class="cabecera">
+    <div class="cabecera__interior">
+      <a class="marca" href="../index.html">
+        <img src="../img/logo.svg" alt="Logotipo de Cazadores Wiki" width="44" height="44">
+        <span>Cazadores Wiki</span>
+      </a>
+      <nav aria-label="Menú principal">
+        <ul class="menu">
+          <li><a href="../index.html">Inicio</a></li>
+          <li><a href="monstruos.html">Monstruos</a></li>
+          <li><a href="armas.html">Armas</a></li>
+          <li><a href="guias.html">Guías</a></li>
+          <li><a href="contacto.html" aria-current="page">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <h1 class="titulo-pagina">Contacta con nosotros</h1>
+    <p class="entradilla">¿Falta algún monstruo? ¿Has encontrado un error? Escríbenos y respondemos lo antes posible.</p>
+    <section aria-labelledby="formulario-contacto">
+      <h2 id="formulario-contacto">Formulario de comentarios</h2>
+      <form class="formulario" action="mailto:cazadoreswiki@example.com" method="post" enctype="text/plain">
+        <div>
+          <label for="nombre">Nombre de cazador</label>
+          <input type="text" id="nombre" name="nombre" required autocomplete="name">
+        </div>
+        <div>
+          <label for="correo">Correo electrónico</label>
+          <input type="email" id="correo" name="correo" required autocomplete="email">
+        </div>
+        <div>
+          <label for="asunto">Motivo del mensaje</label>
+          <select id="asunto" name="asunto">
+            <option value="comentario">Comentario general</option>
+            <option value="error">Aviso de error</option>
+            <option value="sugerencia">Sugerencia de contenido</option>
+          </select>
+        </div>
+        <div>
+          <label for="mensaje">Mensaje</label>
+          <textarea id="mensaje" name="mensaje" rows="6" required></textarea>
+        </div>
+        <button class="boton" type="submit">Enviar comentario</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- Pie de página -->
+  <footer class="pie">
+    <p>Cazadores Wiki es un proyecto escolar sin ánimo de lucro, hecho por fans. Monster Hunter es una marca de Capcom.</p>
+  </footer>
+</body>
+</html>
