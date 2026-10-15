@@ -24,12 +24,14 @@ body {
   line-height: 1.65;
 }
 img { max-width: 100%; display: block; }
-a { color: #67502f; }
+a { color: rgb(103, 80, 47); }
 a:hover, a:focus-visible { color: #9a6429; }
 .skip-link {
-  position: absolute; left: -9999px; top: 0;
+  position: absolute; left: 0px; top: 0;
   padding: .7rem 1rem; background: var(--paper-light); z-index: 20;
+  color:#201912
 }
+
 .skip-link:focus { left: 1rem; top: 1rem; }
 .site-header {
   color: var(--paper-light);
