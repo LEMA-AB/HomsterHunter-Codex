@@ -1,67 +1,53 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Formulario para contactar con el equipo de Cazadores Wiki, enviar comentarios, proponer monstruos nuevos o avisar de errores.">
-  <title>Contacto | Envía comentarios y sugerencias al equipo de Cazadores Wiki</title>
-  <link rel="icon" href="../img/logo.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="../../Diseño/Estilos/estilos.css">
+  <meta name="description" content="Contacta con el archivo para enviar comentarios, sugerir nuevos contenidos o comunicar correcciones sobre las entradas publicadas.">
+  <title>Correspondencia con el Archivo | The Hunter's Archive</title>
+  <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
-  <!-- Cabecera con logotipo y menú principal -->
-  <header class="cabecera">
-    <div class="cabecera__interior">
-      <a class="marca" href="../index.html">
-        <img src="../img/logo.svg" alt="Logotipo de Cazadores Wiki" width="44" height="44">
-        <span>Cazadores Wiki</span>
-      </a>
-      <nav aria-label="Menú principal">
-        <ul class="menu">
-          <li><a href="../index.html">Inicio</a></li>
-          <li><a href="monstruos.html">Monstruos</a></li>
-          <li><a href="armas.html">Armas</a></li>
-          <li><a href="guias.html">Guías</a></li>
-          <li><a href="contacto.html" aria-current="page">Contacto</a></li>
-        </ul>
-      </nav>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+  <header class="site-header">
+    <div class="header-inner">
+      <p class="eyebrow">Monster Hunter · Archivo del Gremio</p>
+      <p class="site-title">The Hunter's Archive</p>
+      <p class="site-subtitle">Biblioteca de fauna, equipo y expediciones</p>
     </div>
   </header>
-
-  <main>
-    <h1 class="titulo-pagina">Contacta con nosotros</h1>
-    <p class="entradilla">¿Falta algún monstruo? ¿Has encontrado un error? Escríbenos y respondemos lo antes posible.</p>
-    <section aria-labelledby="formulario-contacto">
-      <h2 id="formulario-contacto">Formulario de comentarios</h2>
-      <form class="formulario" action="mailto:cazadoreswiki@example.com" method="post" enctype="text/plain">
-        <div>
-          <label for="nombre">Nombre de cazador</label>
-          <input type="text" id="nombre" name="nombre" required autocomplete="name">
-        </div>
-        <div>
-          <label for="correo">Correo electrónico</label>
-          <input type="email" id="correo" name="correo" required autocomplete="email">
-        </div>
-        <div>
-          <label for="asunto">Motivo del mensaje</label>
-          <select id="asunto" name="asunto">
-            <option value="comentario">Comentario general</option>
-            <option value="error">Aviso de error</option>
-            <option value="sugerencia">Sugerencia de contenido</option>
-          </select>
-        </div>
-        <div>
-          <label for="mensaje">Mensaje</label>
-          <textarea id="mensaje" name="mensaje" rows="6" required></textarea>
-        </div>
-        <button class="boton" type="submit">Enviar comentario</button>
+  <nav class="site-nav" aria-label="Navegación principal">
+    <div class="nav-inner">
+      <a href="index.html">Inicio</a>
+      <a href="bestiario.html">Bestiario</a>
+      <a href="armeria.html">Armería</a>
+      <a href="vestuario.html">Vestuario</a>
+      <a href="atlas.html">Atlas</a>
+      <a href="herbario.html">Herbario</a>
+      <a href="contacto.html" aria-current="page">Contacto</a>
+    </div>
+  </nav>
+  <main id="contenido">
+    <p class="breadcrumb"><a href="index.html">Archivo central</a> / Correspondencia</p>
+    <section class="paper-panel">
+      <p class="eyebrow">Correspondencia del Gremio</p><h1>Escribe al Archivo</h1>
+      <p class="lead">¿Has encontrado un dato que revisar o quieres proponer una nueva entrada? Deja un mensaje para el bibliotecario.</p>
+      <div class="note"><strong>Importante:</strong> este formulario de ejemplo abre el programa de correo del dispositivo mediante <code>mailto:</code>. Para recibir mensajes directamente desde una web publicada, necesitarás conectar un servicio de formularios o un servidor.</div>
+      <form action="mailto:archivo@example.com" method="post" enctype="text/plain">
+        <div class="form-row"><label for="nombre">Nombre o apodo</label><input id="nombre" name="nombre" type="text" autocomplete="name" required></div>
+        <div class="form-row"><label for="correo">Correo electrónico</label><input id="correo" name="correo" type="email" autocomplete="email" required></div>
+        <div class="form-row"><label for="asunto">Motivo del mensaje</label><select id="asunto" name="asunto" required><option value="">Selecciona una opción</option><option>Sugerir contenido</option><option>Comunicar una corrección</option><option>Hacer una pregunta</option><option>Otro asunto</option></select></div>
+        <div class="form-row"><label for="mensaje">Mensaje</label><textarea id="mensaje" name="mensaje" required placeholder="Escribe aquí tu mensaje..."></textarea></div>
+        <button type="submit">Preparar mensaje</button>
       </form>
+      <p class="small-print">Antes de entregar el proyecto, cambia archivo@example.com por una dirección válida o explica en la memoria que el formulario es una demostración.</p>
     </section>
   </main>
-
-  <!-- Pie de página -->
-  <footer class="pie">
-    <p>Cazadores Wiki es un proyecto escolar sin ánimo de lucro, hecho por fans. Monster Hunter es una marca de Capcom.</p>
+  <footer class="site-footer">
+    <div class="site-footer-inner">
+      <p><strong>The Hunter's Archive</strong> · Un proyecto de archivo fan</p>
+      <p class="small-print">Monster Hunter pertenece a sus respectivos titulares. Proyecto no oficial, sin afiliación con Capcom.</p>
+    </div>
   </footer>
 </body>
 </html>
