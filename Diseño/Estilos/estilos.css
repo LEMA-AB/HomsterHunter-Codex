@@ -26,7 +26,7 @@ body {
   color: var(--ink);
   background:
     radial-gradient(ellipse at top, rgba(255, 255, 255, .34), transparent 55%),
-    #c6b18b;
+   url("../../Media/Imagenes/") no-repeat center/cover;
   font-family: Georgia, "Times New Roman", serif;
   line-height: 1.65;
 }
