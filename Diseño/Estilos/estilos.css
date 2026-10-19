@@ -154,6 +154,12 @@ main {
   position: relative;
 }
 
+.panel {
+    background-image: url('../../Media/Imagenes/Portada-Codice.jpg'); /* URL-Imagen */
+    background-repeat: no-repeat; /* Evitar que la imagen se repita */
+    background-size: cover; /* Ajustar Imagen al Contenedor */
+}
+
 .paper-panel::before {
   content: "";
   display: block;
