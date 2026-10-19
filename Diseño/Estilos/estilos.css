@@ -26,7 +26,7 @@ body {
   color: var(--ink);
   background:
     radial-gradient(ellipse at top, rgba(255, 255, 255, .34), transparent 55%),
-   url("../../Media/Imagenes/") no-repeat center/cover;
+   url(") no-repeat center/cover;
   font-family: Georgia, "Times New Roman", serif;
   line-height: 1.65;
 }
@@ -430,30 +430,31 @@ hr {
 .Fondo-libro {
   display: flex;
   flex-direction: column;
-  min-height: 100%;
   padding: 1.8rem;
   background: url("../../Media/Imagenes/Libro-antiguo.png") no-repeat center/cover;
-
+  height: 310px;
 }
 
 .Fondo-libro h2,
 .Fondo-libro h3 {
-  margin: 0.4rem 1rem 0;
-  margin-top: 0.4rem;
-  color: black
+  margin: .4rem 0.5rem 0;
+  margin-top: 0.9rem;
+  color: black;
+  text-align: left;
 }
 
 .Fondo-libro p {
   margin-top: .35rem;
-  margin: .4rem 1rem 0;
+  margin: .1rem 0.5rem 0;
   color: black;
+  font-size: .9rem;
 }
 
 .Fondo-libro a {
   margin-top: .35rem;
   font-weight: bold;
   margin-bottom: 20px;
-  margin: .4rem 1rem 0;
+  margin: .4rem 0.5rem 0;
   color: black;
 }
 
