@@ -202,34 +202,14 @@ h3 {
 }
 
 .archive-card {
-  display: flex;
-  flex-direction: column;
-  min-height: 100%;
-  padding: 1.8rem;
-  background: url("../../Media/Imagenes/Libro-antiguo.png") no-repeat center/cover;
-
+  display: flex; flex-direction: column; min-height: 100%;
+  padding: 1.1rem; background: var(--paper-light);
+  border: 1px solid var(--line); box-shadow: 0 3px 8px var(--shadow);
 }
-
-.archive-card h2,
-.archive-card h3 {
-  margin: 0.4rem 1rem 0;
-  margin-top: 0.4rem;
-  color: black
-}
-
-.archive-card p {
-  margin-top: .35rem;
-  margin: .4rem 1rem 0;
-  color: black;
-}
-
-.archive-card a {
-  margin-top: .35rem;
-  font-weight: bold;
-  margin-bottom: 20px;
-  margin: .4rem 1rem 0;
-  color: black;
-}
+.card-icon { font-size: 2.4rem; }
+.archive-card h2, .archive-card h3 { margin: .4rem 0; }
+.archive-card p { margin-top: .35rem; }
+.archive-card a { margin-top: auto; font-weight: bold; }
 
 .tag {
   display: inline-block;
