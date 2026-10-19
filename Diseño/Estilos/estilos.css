@@ -20,7 +20,7 @@
 html {
   scroll-behavior: smooth;
   /* ------------------------- FONDO ------------------------- */
-    background-image: url('../../Media/Imagenes/Marco-Libreria2.jpg'); /* URL-Imagen */
+    background-image: url('../../Media/Imagenes/Marco-Libreria.jpg'); /* URL-Imagen */
     background-repeat: no-repeat; /* Evitar que la imagen se repita */
     background-size: cover; /* Ajustar Imagen al Contenedor */       
     background-attachment: fixed; /* Fijar Imagen */
@@ -75,7 +75,7 @@ a:focus-visible {
 main,
 .site-footer-inner {
   width: min(1120px, calc(100% - 2rem));
-  margin-inline: auto;
+  margin-inline: auto 
 }
 
 .header-inner {
@@ -138,6 +138,9 @@ main,
 main {
   padding: 2rem 0 3.25rem;
   min-height: 60vh;
+    background-image: url('../../Media/Imagenes/FolioViejo.avif'); /* URL-Imagen */
+    background-repeat: no-repeat; /* Evitar que la imagen se repita */
+    background-size: cover; /* Ajustar Imagen al Contenedor */ 
 }
 
 .paper-panel {
