@@ -32,8 +32,8 @@ body {
   font-family: Georgia, "Times New Roman", serif;
   line-height: 1.65;
 
-
 }
+
 
 img {
   max-width: 100%;
@@ -109,6 +109,9 @@ main,
 .site-nav {
   background: #e2d1ad;
   border-bottom: 1px solid #a78c5f;
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }
 
 .nav-inner {
@@ -144,7 +147,7 @@ main {
 }
 
 .paper-panel {
-  background:#2c231b00;
+  background: #2c231b00;
   border: 1px solid var(--line);
   box-shadow: 0 8px 24px var(--shadow);
   padding: clamp(1rem, 3vw, 2rem);
@@ -209,14 +212,32 @@ h3 {
 }
 
 .archive-card {
-  display: flex; flex-direction: column; min-height: 100%;
-  padding: 1.1rem; background: var(--paper-light);
-  border: 1px solid var(--line); box-shadow: 0 3px 8px var(--shadow);
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  padding: 1.1rem;
+  background: var(--paper-light);
+  border: 1px solid var(--line);
+  box-shadow: 0 3px 8px var(--shadow);
 }
-.card-icon { font-size: 2.4rem; }
-.archive-card h2, .archive-card h3 { margin: .4rem 0; }
-.archive-card p { margin-top: .35rem; }
-.archive-card a { margin-top: auto; font-weight: bold; }
+
+.card-icon {
+  font-size: 2.4rem;
+}
+
+.archive-card h2,
+.archive-card h3 {
+  margin: .4rem 0;
+}
+
+.archive-card p {
+  margin-top: .35rem;
+}
+
+.archive-card a {
+  margin-top: auto;
+  font-weight: bold;
+}
 
 .note {
   padding: 1rem 1.2rem;
@@ -437,30 +458,31 @@ hr {
 .Fondo-libro {
   display: flex;
   flex-direction: column;
-  min-height: 100%;
   padding: 1.8rem;
   background: url("../../Media/Imagenes/Libro-antiguo.png") no-repeat center/cover;
-
+  height: 310px;
 }
 
 .Fondo-libro h2,
 .Fondo-libro h3 {
-  margin: 0.4rem 1rem 0;
-  margin-top: 0.4rem;
-  color: black
+  margin: .4rem 0.5rem 0;
+  margin-top: 0.9rem;
+  color: black;
+  text-align: left;
 }
 
 .Fondo-libro p {
   margin-top: .35rem;
-  margin: .4rem 1rem 0;
+  margin: .1rem 0.5rem 0;
   color: black;
+  font-size: .9rem;
 }
 
 .Fondo-libro a {
   margin-top: .35rem;
   font-weight: bold;
   margin-bottom: 20px;
-  margin: .4rem 1rem 0;
+  margin: .4rem 0.5rem 0;
   color: black;
 }
 
