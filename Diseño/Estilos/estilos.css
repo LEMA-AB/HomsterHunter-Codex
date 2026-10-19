@@ -472,7 +472,7 @@ hr {
 
 .Fondo-libro h2,
 .Fondo-libro h3 {
-  margin: .4rem 0.5rem 0;
+  margin: .4rem 1.25rem 0;
   margin-top: 0;
   color: black;
   text-align: left;
@@ -481,18 +481,19 @@ hr {
 
 .Fondo-libro p {
   margin-top: .35rem;
-  margin: .1rem 0.5rem 0;
+  margin: .1rem 1.25rem 0;
   color: black;
   font-size: .9rem;
   padding-right: 40%;
   line-height: 1.4;
+  
 }
 
 .Fondo-libro a {
   margin-top: .35rem;
   font-weight: bold;
   margin-bottom: 20px;
-  margin: .4rem 0.5rem 0;
+  margin: .4rem 1.25rem 0;
   color: black;
 }
 
@@ -512,7 +513,7 @@ hr {
 .card-grid-libros {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 0.1rem;
+  gap: 1rem;
 }
 .pos-izquierda {
   position: absolute;
