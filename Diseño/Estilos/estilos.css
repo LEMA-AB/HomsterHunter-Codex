@@ -74,7 +74,7 @@ a:focus-visible {
 .nav-inner,
 main,
 .site-footer-inner {
-  width: min(1120px, calc(100% - 2rem));
+  width: min(1300px, calc(100% - 2rem));
   margin-inline: auto 
 }
 
@@ -141,7 +141,7 @@ main,
 main {
   padding: 2rem 0 3.25rem;
   min-height: 60vh;
-    background-image: url('../../Media/Imagenes/FolioViejo.avif'); /* URL-Imagen */
+    background-image: url('../../Media/Imagenes/FolioViejo2.jpg'); /* URL-Imagen */
     background-repeat: no-repeat; /* Evitar que la imagen se repita */
     background-size: cover; /* Ajustar Imagen al Contenedor */ 
 }
