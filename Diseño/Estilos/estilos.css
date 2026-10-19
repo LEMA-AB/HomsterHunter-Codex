@@ -19,16 +19,20 @@
 
 html {
   scroll-behavior: smooth;
+  /* ------------------------- FONDO ------------------------- */
+    background-image: url('../../Media/Imagenes/Marco-Libreria2.jpg'); /* URL-Imagen */
+    background-repeat: no-repeat; /* Evitar que la imagen se repita */
+    background-size: cover; /* Ajustar Imagen al Contenedor */       
+    background-attachment: fixed; /* Fijar Imagen */
 }
 
 body {
   margin: 0;
   color: var(--ink);
-  background:
-    radial-gradient(ellipse at top, rgba(255, 255, 255, .34), transparent 55%),
-   url(") no-repeat center/cover;
   font-family: Georgia, "Times New Roman", serif;
   line-height: 1.65;
+
+
 }
 
 img {
@@ -137,7 +141,7 @@ main {
 }
 
 .paper-panel {
-  background: var(--paper);
+  background:#2c231b00;
   border: 1px solid var(--line);
   box-shadow: 0 8px 24px var(--shadow);
   padding: clamp(1rem, 3vw, 2rem);
