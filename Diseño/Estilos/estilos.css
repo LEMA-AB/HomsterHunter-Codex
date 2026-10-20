@@ -84,14 +84,6 @@ main,
   text-align: center;
 }
 
-.eyebrow {
-  margin: 0 0 .45rem;
-  color: #d7bd8b;
-  font-size: .76rem;
-  letter-spacing: .2em;
-  text-transform: uppercase;
-}
-
 .site-title {
   margin: 0;
   color: #f5e7c7;
@@ -158,8 +150,9 @@ main {
 .panel {
     background-image: url('../../Media/Imagenes/Fondo-Inicio-cuadro.jpg');
     background-repeat: no-repeat;
-    background-size: 100% 130%;
+    background-size: contain;
     background-position: center;
+    background-size: 100% 120%;
 }
 
 .paper-panel::before {
@@ -195,8 +188,9 @@ h3 {
 }
 
 h1 {
-  margin-top: 0;
+  margin-top: 50px;
   font-size: clamp(1.8rem, 4vw, 2.7rem);
+  color: #271e13;
 }
 
 h2 {
@@ -539,4 +533,10 @@ hr {
   font-size: .9rem;
   color: black;
   margin: 0;
+}
+
+.centro {
+  text-align: center;
+  margin: 0 auto;
+  width: 60%;
 }
