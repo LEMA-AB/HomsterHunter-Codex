@@ -21,10 +21,14 @@
 html {
   scroll-behavior: smooth;
   /* ------------------------- FONDO ------------------------- */
-    background-image: url('../../Media/Imagenes/Marco-Libreria.jpg'); /* URL-Imagen */
-    background-repeat: no-repeat; /* Evitar que la imagen se repita */
-    background-size: cover; /* Ajustar Imagen al Contenedor */       
-    background-attachment: fixed; /* Fijar Imagen */
+  background-image: url('../../Media/Imagenes/Marco-Libreria.jpg');
+  /* URL-Imagen */
+  background-repeat: no-repeat;
+  /* Evitar que la imagen se repita */
+  background-size: cover;
+  /* Ajustar Imagen al Contenedor */
+  background-attachment: fixed;
+  /* Fijar Imagen */
 }
 
 body {
@@ -67,8 +71,10 @@ a:focus-visible {
 
 .site-header {
   color: var(--paper-light);
-  background: linear-gradient(135deg, #211b16, #493626 70%, #30271f);
-  border-bottom: 4px double var(--gold);
+  background-image: url('../../Media/Imagenes/Navegador.jpg');
+  background-size: contain;
+  background-position: center;
+  background-size: 40% 100%;
 }
 
 .header-inner,
@@ -76,7 +82,7 @@ a:focus-visible {
 main,
 .site-footer-inner {
   width: min(1300px, calc(100% - 2rem));
-  margin-inline: auto 
+  margin-inline: auto
 }
 
 .header-inner {
@@ -100,11 +106,10 @@ main,
 }
 
 .site-nav {
-  background: #e2d1ad;
-  border-bottom: 1px solid #a78c5f;
+  background-image: url('../../Media/Imagenes/Patron-tablas.jpg');
   position: sticky;
   top: 0;
-  z-index: 100;
+  z-index: 100; 
 }
 
 .nav-inner {
@@ -119,7 +124,7 @@ main,
   display: inline-block;
   padding: .55rem .75rem;
   border-radius: 3px;
-  color: var(--ink);
+  color: white;
   text-decoration: none;
   font-size: .96rem;
 }
@@ -127,16 +132,19 @@ main,
 .site-nav a:hover,
 .site-nav a:focus-visible,
 .site-nav a[aria-current="page"] {
-  background: var(--ink);
-  color: var(--paper-light);
+  background:#614427;
+  color: white;
 }
 
 main {
   padding: 2rem 0 3.25rem;
   min-height: 60vh;
-    background-image: url('../../Media/Imagenes/FolioViejo.avif'); /* URL-Imagen */
-    background-repeat: no-repeat; /* Evitar que la imagen se repita */
-    background-size: cover; /* Ajustar Imagen al Contenedor */ 
+  background-image: url('../../Media/Imagenes/FolioViejo.avif');
+  /* URL-Imagen */
+  background-repeat: no-repeat;
+  /* Evitar que la imagen se repita */
+  background-size: cover;
+  /* Ajustar Imagen al Contenedor */
 }
 
 .paper-panel {
@@ -148,11 +156,11 @@ main {
 }
 
 .panel {
-    background-image: url('../../Media/Imagenes/Fondo-Inicio-cuadro.jpg');
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-    background-size: 100% 120%;
+  background-image: url('../../Media/Imagenes/Fondo-Inicio-cuadro.jpg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  background-size: 100% 120%;
 }
 
 .paper-panel::before {
@@ -160,14 +168,12 @@ main {
   display: block;
   height: 5px;
   margin: -1rem -1rem 1.25rem;
-  border-top: 1px solid var(--line);
-  border-bottom: 1px solid var(--line);
 }
 
 .hero {
   text-align: center;
   padding: clamp(1.5rem, 5vw, 3.5rem);
-  min-height: 600px; 
+  min-height: 600px;
 }
 
 .hero-logo {
@@ -176,9 +182,9 @@ main {
 }
 
 .hero-logo img {
-    display: block;
-    width: 100px;
-    height: auto;
+  display: block;
+  width: 100px;
+  height: auto;
 }
 
 h1,
@@ -476,7 +482,7 @@ hr {
 
 .Fondo-libro:hover {
   height: 320px;
-  }
+}
 
 .Fondo-libro h2,
 .Fondo-libro h3 {
@@ -484,7 +490,7 @@ hr {
   margin-top: 0;
   color: black;
   text-align: left;
-  padding-right: 40%; 
+  padding-right: 40%;
 }
 
 .Fondo-libro p {
@@ -523,12 +529,13 @@ hr {
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 1rem;
 }
+
 .pos-izquierda {
   position: absolute;
-  top: 120px; 
-  left: 202px; 
+  top: 120px;
+  left: 202px;
   text-align: center;
-  width: 150px; 
+  width: 150px;
   font-weight: bold;
   font-size: .9rem;
   color: black;
