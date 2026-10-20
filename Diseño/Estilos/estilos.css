@@ -409,7 +409,11 @@ button:hover,
 }
 
 .small-print {
-  color: #c8b58e;
+  color: hsl(28, 22%, 15%);
+  font-size: .86rem;
+}
+.small-print2 {
+  color: hsl(30, 12%, 97%);
   font-size: .86rem;
 }
 
