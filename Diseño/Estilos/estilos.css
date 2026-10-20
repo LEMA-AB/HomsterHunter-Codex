@@ -563,5 +563,15 @@ hr {
   width: 60%;
 }
 #titulo-bajo {
-  margin-top: 120px;
+  margin- top: 120px;
+}
+
+
+.Img-Contacto {
+  display: block;
+  width: 400px;
+  height: auto;
+  margin: auto 820px;
+  border-radius: 5px;
+  position: absolute;
 }

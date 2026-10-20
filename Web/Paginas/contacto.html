@@ -36,10 +36,37 @@
       <p class="lead">¿Has encontrado un dato que revisar o quieres proponer una nueva entrada? Deja un mensaje para el bibliotecario.</p>
       <div class="note"><strong>Importante:</strong> este formulario de ejemplo abre el programa de correo del dispositivo mediante <code>mailto:</code>. Para recibir mensajes directamente desde una web publicada, necesitarás conectar un servicio de formularios o un servidor.</div>
       <form action="mailto:archivo@example.com" method="post" enctype="text/plain">
-        <div class="form-row"><label for="nombre">Nombre o apodo</label><input id="nombre" name="nombre" type="text" autocomplete="name" required></div>
-        <div class="form-row"><label for="correo">Correo electrónico</label><input id="correo" name="correo" type="email" autocomplete="email" required></div>
-        <div class="form-row"><label for="asunto">Motivo del mensaje</label><select id="asunto" name="asunto" required><option value="">Selecciona una opción</option><option>Sugerir contenido</option><option>Comunicar una corrección</option><option>Hacer una pregunta</option><option>Otro asunto</option></select></div>
-        <div class="form-row"><label for="mensaje">Mensaje</label><textarea id="mensaje" name="mensaje" required placeholder="Escribe aquí tu mensaje..."></textarea></div>
+        <div class="form-row"><label for="nombre">Nombre o apodo</label>
+          <div>
+            <img src="../../Media/Imagenes/Fondo-Contacto.jpg" alt="Fondo de contacto" class="Img-Contacto">
+          </div>
+          <input id="nombre" name="nombre" type="text" autocomplete="name" required></div>
+        <div class="form-row">
+          <label for="correo">Correo electrónico</label>
+          <input id="correo" name="correo" type="email" autocomplete="email" required>
+        </div>
+        <div class="form-row">
+          <label for="asunto">Motivo del mensaje</label>
+          <select id="asunto" name="asunto" required>
+            <option value="">Selecciona una opción</option>
+            <option>Sugerir contenido</option>
+            <option>Comunicar una corrección</option>
+            <option>Hacer una pregunta</option>
+            <option>Otro asunto</option>
+          </select>
+        </div>
+        <div class="form-row">
+          <label for="mensaje">Mensaje</label>
+          <textarea id="mensaje" name="mensaje" required placeholder="Escribe aquí tu mensaje..."></textarea>
+        </div>
+        <div class="form-row">
+          <label for="archivo">Adjuntar archivo (opcional)</label>
+          <input id="archivo" name="archivo" type="file" accept=".jpg,.jpeg,.png,.pdf,.doc,.docx">
+        </div>
+        <div style="margin-bottom: 20px;">
+          <label for="boletin">Quiero recibir pergaminos con las nuevas actualizaciones del Archivo (prometemos que no es spam).</label>
+          <input id="boletin" name="boletin" type="checkbox">
+        </div>
         <button type="submit">Enviar mensaje</button>
       </form>
       <p class="small-print">Antes de darle a enviar, cambia archivo@example.com por una dirección válida.</p>
