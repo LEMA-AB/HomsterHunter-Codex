@@ -109,7 +109,7 @@ main,
   background-image: url('../../Media/Imagenes/Patron-tablas.jpg');
   position: sticky;
   top: 0;
-  z-index: 100; 
+  z-index: 100;
 }
 
 .nav-inner {
@@ -132,7 +132,7 @@ main,
 .site-nav a:hover,
 .site-nav a:focus-visible,
 .site-nav a[aria-current="page"] {
-  background:#614427;
+  background: #614427;
   color: white;
 }
 
@@ -223,6 +223,15 @@ h3 {
 .lead {
   max-width: 720px;
   font-size: 1.12rem;
+  text-align: center;
+  margin: 0 auto;
+  width: 60%;
+}
+
+.lead-contacto {
+  max-width: 720px;
+  font-size: 1.12rem;
+
 }
 
 .section-heading {
@@ -412,6 +421,7 @@ button:hover,
   color: hsl(28, 22%, 15%);
   font-size: .86rem;
 }
+
 .small-print2 {
   color: hsl(30, 12%, 97%);
   font-size: .86rem;
@@ -562,6 +572,7 @@ hr {
   margin: 0 auto;
   width: 60%;
 }
+
 #titulo-bajo {
   margin- top: 120px;
 }
