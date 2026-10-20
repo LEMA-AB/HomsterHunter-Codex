@@ -156,9 +156,10 @@ main {
 }
 
 .panel {
-    background-image: url('../../Media/Imagenes/Portada-Codice.jpg'); /* URL-Imagen */
-    background-repeat: no-repeat; /* Evitar que la imagen se repita */
-    background-size: cover; /* Ajustar Imagen al Contenedor */
+    background-image: url('../../Media/Imagenes/Fondo-Inicio-cuadro.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 130%;
+    background-position: center;
 }
 
 .paper-panel::before {
@@ -173,6 +174,7 @@ main {
 .hero {
   text-align: center;
   padding: clamp(1.5rem, 5vw, 3.5rem);
+  min-height: 600px; 
 }
 
 .hero-logo {
@@ -463,8 +465,8 @@ hr {
   width: 150px;
   height: auto;
   position: absolute;
-  top: 15%;
-  right: 5%;
+  top: 45px;
+  left: 215px;
 }
 
 
@@ -496,7 +498,7 @@ hr {
   margin: .1rem 1.25rem 0;
   color: black;
   font-size: .9rem;
-  padding-right: 40%;
+  padding-right: 45%;
   line-height: 1.4;
 }
 
@@ -504,8 +506,9 @@ hr {
   margin-top: .35rem;
   font-weight: bold;
   margin-bottom: 20px;
-  margin: .4rem 1.25rem 0;
+  margin: .4rem 10px 0;
   color: black;
+  font-size: .9rem;
 }
 
 .tag {
@@ -528,7 +531,12 @@ hr {
 }
 .pos-izquierda {
   position: absolute;
-  top: 40%;
-  left: 50%;
+  top: 120px; 
+  left: 202px; 
   text-align: center;
+  width: 150px; 
+  font-weight: bold;
+  font-size: .9rem;
+  color: black;
+  margin: 0;
 }
