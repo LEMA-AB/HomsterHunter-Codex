@@ -59,14 +59,14 @@ a:focus-visible {
   left: 0px;
   top: 0;
   padding: .7rem 1rem;
-  background: var(--paper-light);
-  z-index: 20;
-  color: #201912
+  width: 150px;
+  background: rgba(67, 42, 5, 0.462);
+  box-shadow: 5px 10px 10px 5px black;
+  border-end-end-radius: 10px;
 }
 
-.skip-link:focus {
-  left: 1rem;
-  top: 1rem;
+.skip-link:hover {
+  width: 175px;
 }
 
 .site-header {
@@ -101,7 +101,7 @@ main,
 
 .site-subtitle {
   margin: .75rem 0 0;
-  color: #e0d0ad;
+  color: #f1f0ed;
   font-style: italic;
 }
 
@@ -137,7 +137,7 @@ main,
 }
 
 main {
-  padding: 2rem 0 3.25rem;
+  padding: 0rem 0 3.25rem;
   min-height: 60vh;
   background-image: url('../../Media/Imagenes/FolioViejo.avif');
   /* URL-Imagen */
@@ -160,7 +160,7 @@ main {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
-  background-size: 100% 120%;
+  background-size: 110% 110%;
 }
 
 .paper-panel::before {
@@ -181,10 +181,22 @@ main {
   line-height: 1.2;
 }
 
+.hero2-logo img {
+  display: block;
+  width: 100px;
+  height: auto;
+  margin-left: 820px;
+  margin-top: 175px;
+  position: absolute;
+}
+
 .hero-logo img {
   display: block;
   width: 100px;
   height: auto;
+  margin-left: 265px;
+  margin-top: 175px;
+  position: absolute;
 }
 
 h1,
@@ -546,4 +558,7 @@ hr {
   text-align: center;
   margin: 0 auto;
   width: 60%;
+}
+#titulo-bajo {
+  margin-top: 120px;
 }
