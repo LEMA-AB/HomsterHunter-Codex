@@ -63,7 +63,8 @@ a:focus-visible {
 }
 
 .skip-link:hover {
-  width: 175px;
+  width: 5rem;
+  transition: 0.5s;
 }
 
 .site-header {
