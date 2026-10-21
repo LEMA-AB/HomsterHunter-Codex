@@ -59,7 +59,7 @@ a:focus-visible {
   left: 2px;
   top: 2px;
   padding: -5rem -5rem;
-  width: clamp(60px, 15vw, 150px); /* Se adapta al ancho de la pantalla */
+  width: clamp(60px, 15vw, 100px); /* Se adapta al ancho de la pantalla */
   background: rgba(67, 42, 5, 0.462);
   box-shadow: 5px 10px 10px 5px black;
   border-radius: 10px;
@@ -164,48 +164,80 @@ main {
   position: relative;
 }
 
+/* 1. El contenedor del cuadro */
 .panel {
   background-image: url('../../Media/Imagenes/Fondo-Inicio-cuadro.jpg');
   background-repeat: no-repeat;
-  background-position: center;
-  background-size: 110% 110%;
+  background-position: center center;
+  background-size: 120% 130%; /* Ajuste exacto al contenedor */
+  margin: 0 auto;
 }
 
-.paper-panel::before {
-  content: "";
-  display: block;
-  height: 5px;
-  margin: -1rem -1rem 1.25rem;
-}
-
+/* 2. El cuadro con el texto */
 .hero {
   text-align: center;
-  padding: clamp(1.5rem, 5vw, 3.5rem);
-  min-height: 600px;
-}
-
-.hero-logo {
-  font-size: clamp(3rem, 8vw, 5.5rem);
-  line-height: 1.2;
-}
-
-.hero2-logo img {
-  display: block;
-  width: 100px;
-  height: auto;
-  margin-left: 820px;
-  margin-top: 175px;
-  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centra el contenido */
+  align-items: center;
+  
+  /* EL TRUCO PARA SUBIR TODO EL BLOQUE: */
+  /* Añadimos un padding inferior grande y quitamos el superior */
+  padding-top: 0; 
+  padding-bottom: 12vw; /* Empuja el texto hacia arriba */
+  
+  width: 100%;
+  aspect-ratio: 16 / 9; /* Asegura la proporción del cuadro */
+  box-sizing: border-box;
 }
 
 .hero-logo img {
-  display: block;
-  width: 100px;
+  width: 6vw; /* El logo ocupa el 6% del ancho de la pantalla */
+  max-width: 100px;
+  min-width: 30px;
+  margin-left: auto;
   height: auto;
-  margin-left: 265px;
-  margin-top: 175px;
-  position: absolute;
 }
+
+.hero2-logo img {
+  width: 6vw; /* El logo ocupa el 6% del ancho de la pantalla */
+  max-width: 100px;
+  min-width: 30px;
+  height: auto;
+}
+
+/* 4. El texto: TODO escalado con 'vw' para que encaje en el pergamino */
+.hero h1 {
+  margin: 0 0 1vw 0;
+  font-size: clamp(1.2rem, 3.5vw, 2.5rem); /* Se encoge solo */
+  color: #271e13;
+  line-height: 1.1;
+}
+
+/* 5. Texto secundario (cursiva) */
+.hero .lead {
+  font-size: clamp(0.7rem, 1.6vw, 1.2rem);
+  margin: 0 auto 1.5vw auto;
+  width: 90%;
+  line-height: 1.3;
+}
+
+/* 6. Texto central */
+.hero .centro {
+  font-size: clamp(0.6rem, 1.2vw, 1rem);
+  margin: 0 auto 2vw auto;
+  width: 85%;
+  line-height: 1.3;
+}
+
+/* 7. El botón */
+.hero .button-link {
+  font-size: clamp(0.7rem, 1.2vw, 1rem);
+  padding: 1vw 2.5vw;
+  margin-top: 1vw;
+  display: inline-block;
+  width: auto;
+} 
 
 h1,
 h2,
@@ -214,7 +246,6 @@ h3 {
 }
 
 h1 {
-  margin-top: 50px;
   font-size: clamp(1.8rem, 4vw, 2.7rem);
   color: #271e13;
 }
