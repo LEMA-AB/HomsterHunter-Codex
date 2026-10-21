@@ -162,22 +162,44 @@ main {
 /* 2. El cuadro con el texto */
 .hero {
   text-align: center;
-  padding-bottom: 120px; /* Empuja el texto hacia arriba */
+  padding-bottom: 120px; 
+  position: relative; 
 }
 
-.hero-logo img {
-  width: 6vw; /* El logo ocupa el 6% del ancho de la pantalla */
-  max-width: 100px;
-  min-width: 30px;
-  margin-left: auto;
-  height: auto;
+/* --- LOGO IZQUIERDO --- */
+.hero-logo {
+  position: absolute;
+  left: 18%; /* Se ancla al 2% del borde izquierdo. Al ser %, siempre mantiene la misma proporción. */
+  top: 35%;
+  z-index: 10;
 }
 
+/* --- LOGO DERECHO --- */
+.hero2-logo {
+  position: absolute;
+  right: 2%; /* Se ancla al 2% del borde derecho. */
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+}
+
+/* --- TAMAÑO Y ESTILO DE LOS LOGOS --- */
+.hero-logo img, 
 .hero2-logo img {
-  width: 6vw; /* El logo ocupa el 6% del ancho de la pantalla */
+  width: 8vw; /* Escala proporcionalmente al ancho de la pantalla */
   max-width: 100px;
-  min-width: 30px;
+  min-width: 65px;
   height: auto;
+
+}
+
+/* --- EL TEXTO DEL CENTRO --- */
+.hero-texto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  width: 85%; /* Deja un 15% libre (7.5% a cada lado) para que el texto NUNCA toque los logos */
 }
 
 /* 4. El texto: TODO escalado con 'vw' para que encaje en el pergamino */
