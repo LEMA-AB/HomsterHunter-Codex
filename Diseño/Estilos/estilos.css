@@ -56,13 +56,19 @@ a:focus-visible {
 
 .skip-link {
   position: absolute;
-  left: 0px;
-  top: 0;
-  padding: .7rem 1rem;
-  width: 150px;
+  left: 2px;
+  top: 2px;
+  padding: -5rem -5rem;
+  width: clamp(60px, 15vw, 150px); /* Se adapta al ancho de la pantalla */
   background: rgba(67, 42, 5, 0.462);
   box-shadow: 5px 10px 10px 5px black;
-  border-end-end-radius: 10px;
+  border-radius: 10px;
+} 
+
+/* Añade también esta regla justo debajo para asegurar que la imagen se ajuste */
+.skip-link img {
+  width: 100%;
+  height: auto;
 }
 
 .skip-link:hover {
@@ -72,9 +78,12 @@ a:focus-visible {
 .site-header {
   color: var(--paper-light);
   background-image: url('../../Media/Imagenes/Navegador.jpg');
-  background-size: contain;
+  background-size: cover;
   background-position: center;
-  background-size: 40% 100%;
+  background-size: 60% 100%;
+  background-position: center center;
+  
+  
 }
 
 .header-inner,
@@ -86,7 +95,7 @@ main,
 }
 
 .header-inner {
-  padding: 1.7rem 0 1.35rem;
+  padding: 2.5rem 0 1.35rem; 
   text-align: center;
 }
 
@@ -158,7 +167,6 @@ main {
 .panel {
   background-image: url('../../Media/Imagenes/Fondo-Inicio-cuadro.jpg');
   background-repeat: no-repeat;
-  background-size: contain;
   background-position: center;
   background-size: 110% 110%;
 }
