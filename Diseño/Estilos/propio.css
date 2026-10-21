@@ -98,3 +98,33 @@
     border-radius: 5px;
     position: absolute;
 }
+
+html {
+  /* ------------------------- FONDO ------------------------- */
+  background-image: url('../../Media/Imagenes/Marco-Libreria.jpg');
+  /* URL-Imagen */
+  background-repeat: no-repeat;
+  /* Evitar que la imagen se repita */
+  background-size: cover;
+  /* Ajustar Imagen al Contenedor */
+  background-attachment: fixed;
+  /* Fijar Imagen */
+}
+
+main {
+  background-image: url('../../Media/Imagenes/FolioViejo.avif');
+  /* URL-Imagen */
+  background-repeat: no-repeat;
+  /* Evitar que la imagen se repita */
+  background-size: cover;
+  /* Ajustar Imagen al Contenedor */
+}
+
+.hero2-logo img {
+  display: block;
+  width: 100px;
+  height: auto;
+  margin-left: 820px;
+  margin-top: 175px;
+  position: absolute;
+}

@@ -20,15 +20,6 @@
 
 html {
   scroll-behavior: smooth;
-  /* ------------------------- FONDO ------------------------- */
-  background-image: url('../../Media/Imagenes/Marco-Libreria.jpg');
-  /* URL-Imagen */
-  background-repeat: no-repeat;
-  /* Evitar que la imagen se repita */
-  background-size: cover;
-  /* Ajustar Imagen al Contenedor */
-  background-attachment: fixed;
-  /* Fijar Imagen */
 }
 
 body {
@@ -65,7 +56,7 @@ a:focus-visible {
   border-radius: 10px;
 } 
 
-/* Añade también esta regla justo debajo para asegurar que la imagen se ajuste */
+/* Hace que la imagen se ajuste */
 .skip-link img {
   width: 100%;
   height: auto;
@@ -148,12 +139,6 @@ main,
 main {
   padding: 0rem 0 3.25rem;
   min-height: 60vh;
-  background-image: url('../../Media/Imagenes/FolioViejo.avif');
-  /* URL-Imagen */
-  background-repeat: no-repeat;
-  /* Evitar que la imagen se repita */
-  background-size: cover;
-  /* Ajustar Imagen al Contenedor */
 }
 
 .paper-panel {
@@ -187,15 +172,6 @@ main {
 .hero-logo {
   font-size: clamp(3rem, 8vw, 5.5rem);
   line-height: 1.2;
-}
-
-.hero2-logo img {
-  display: block;
-  width: 100px;
-  height: auto;
-  margin-left: 820px;
-  margin-top: 175px;
-  position: absolute;
 }
 
 .hero-logo img {
