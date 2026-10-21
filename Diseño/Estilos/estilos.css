@@ -137,7 +137,7 @@ main,
 }
 
 main {
-  padding: 0rem 0 3.25rem;
+  padding: 0rem 0 1.25rem;
   min-height: 60vh;
 }
 
@@ -145,7 +145,7 @@ main {
   background: #2c231b00;
   border: 1px solid var(--line);
   box-shadow: 0 8px 24px var(--shadow);
-  padding: clamp(1rem, 3vw, 2rem);
+  padding: clamp(0.5rem, 3vw, 2rem);
   position: relative;
 }
 
@@ -153,7 +153,7 @@ main {
 .panel {
   background-image: url('../../Media/Imagenes/Fondo-Inicio-cuadro.jpg');
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: center;
   background-size: 120% 130%; /* Ajuste exacto al contenedor */
   margin: 0 auto;
 }
@@ -161,19 +161,7 @@ main {
 /* 2. El cuadro con el texto */
 .hero {
   text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center; /* Centra el contenido */
-  align-items: center;
-  
-  /* EL TRUCO PARA SUBIR TODO EL BLOQUE: */
-  /* Añadimos un padding inferior grande y quitamos el superior */
-  padding-top: 0; 
-  padding-bottom: 12vw; /* Empuja el texto hacia arriba */
-  
-  width: 100%;
-  aspect-ratio: 16 / 9; /* Asegura la proporción del cuadro */
-  box-sizing: border-box;
+  padding-bottom: 120px; /* Empuja el texto hacia arriba */
 }
 
 .hero-logo img {
@@ -193,17 +181,16 @@ main {
 
 /* 4. El texto: TODO escalado con 'vw' para que encaje en el pergamino */
 .hero h1 {
-  margin: 0 0 1vw 0;
-  font-size: clamp(1.2rem, 3.5vw, 2.5rem); /* Se encoge solo */
+  font-size: clamp(1.5rem, 2.5vw, 2.5rem); /* Se encoge solo */
   color: #271e13;
   line-height: 1.1;
 }
 
 /* 5. Texto secundario (cursiva) */
 .hero .lead {
-  font-size: clamp(0.7rem, 1.6vw, 1.2rem);
+  font-size: clamp(1rem, 3vw, 2rem);
   margin: 0 auto 1.5vw auto;
-  width: 90%;
+  width: 80%;
   line-height: 1.3;
 }
 
@@ -211,7 +198,7 @@ main {
 .hero .centro {
   font-size: clamp(0.6rem, 1.2vw, 1rem);
   margin: 0 auto 2vw auto;
-  width: 85%;
+  width: 80%;
   line-height: 1.3;
 }
 
@@ -219,9 +206,7 @@ main {
 .hero .button-link {
   font-size: clamp(0.7rem, 1.2vw, 1rem);
   padding: 1vw 2.5vw;
-  margin-top: 1vw;
   display: inline-block;
-  width: auto;
 } 
 
 h1,
