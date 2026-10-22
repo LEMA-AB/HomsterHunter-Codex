@@ -50,11 +50,12 @@ a:focus-visible {
   left: 2px;
   top: 2px;
   padding: -5rem -5rem;
-  width: clamp(60px, 15vw, 100px); /* Se adapta al ancho de la pantalla */
+  width: clamp(60px, 15vw, 100px);
+  /* Se adapta al ancho de la pantalla */
   background: rgba(67, 42, 5, 0.462);
   box-shadow: 5px 10px 10px 5px black;
   border-radius: 10px;
-} 
+}
 
 /* Hace que la imagen se ajuste */
 .skip-link img {
@@ -74,8 +75,8 @@ a:focus-visible {
   background-position: center;
   background-size: 60% 100%;
   background-position: center center;
-  
-  
+
+
 }
 
 .header-inner,
@@ -87,7 +88,7 @@ main,
 }
 
 .header-inner {
-  padding: 2.5rem 0 1.35rem; 
+  padding: 2.5rem 0 1.35rem;
   text-align: center;
 }
 
@@ -155,42 +156,16 @@ main {
   background-image: url('../../Media/Imagenes/Fondo-Inicio-cuadro.jpg');
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 120% 130%; /* Ajuste exacto al contenedor */
+  background-size: 120% 130%;
+  /* Ajuste exacto al contenedor */
   margin: 0 auto;
 }
 
 /* 2. El cuadro con el texto */
 .hero {
   text-align: center;
-  padding-bottom: 120px; 
-  position: relative; 
-}
-
-/* --- LOGO IZQUIERDO --- */
-.hero-logo {
-  position: absolute;
-  left: 18%; /* Se ancla al 2% del borde izquierdo. Al ser %, siempre mantiene la misma proporción. */
-  top: 35%;
-  z-index: 10;
-}
-
-/* --- LOGO DERECHO --- */
-.hero2-logo {
-  position: absolute;
-  right: 2%; /* Se ancla al 2% del borde derecho. */
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: 10;
-}
-
-/* --- TAMAÑO Y ESTILO DE LOS LOGOS --- */
-.hero-logo img, 
-.hero2-logo img {
-  width: 8vw; /* Escala proporcionalmente al ancho de la pantalla */
-  max-width: 100px;
-  min-width: 65px;
-  height: auto;
-
+  padding-bottom: 120px;
+  position: relative;
 }
 
 /* --- EL TEXTO DEL CENTRO --- */
@@ -199,12 +174,14 @@ main {
   flex-direction: column;
   align-items: center;
   margin: 0 auto;
-  width: 85%; /* Deja un 15% libre (7.5% a cada lado) para que el texto NUNCA toque los logos */
+  width: 85%;
+  /* Deja un 15% libre (7.5% a cada lado) para que el texto NUNCA toque los logos */
 }
 
 /* 4. El texto: TODO escalado con 'vw' para que encaje en el pergamino */
 .hero h1 {
-  font-size: clamp(1.5rem, 2.5vw, 2.5rem); /* Se encoge solo */
+  font-size: clamp(1.5rem, 2.5vw, 2.5rem);
+  /* Se encoge solo */
   color: #271e13;
   line-height: 1.1;
 }
@@ -230,7 +207,7 @@ main {
   font-size: clamp(0.7rem, 1.2vw, 1rem);
   padding: 1vw 2.5vw;
   display: inline-block;
-} 
+}
 
 h1,
 h2,
