@@ -153,7 +153,7 @@ main {
 
 /* 1. El contenedor del cuadro */
 .panel {
-  background-image: url('../../Media/Imagenes/Fondo-Inicio-cuadro.jpg');
+  background-image: url('../../Media/Imagenes/Fondo-inicio-cuadro.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: 120% 130%;
