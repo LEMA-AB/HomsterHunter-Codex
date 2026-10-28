@@ -1,149 +1,150 @@
-    .iconos {
-        width: 150px;
-        height: auto;
-        position: absolute;
-        top: 45px;
-        left: 215px;
-    }
+     /* Cambia el fondo de main por una imagen y la ajusta */
+     html {
+         background-image: url('../../Media/Imagenes/Marco-Libreria.jpg');
+         background-repeat: no-repeat;
+         background-size: cover;
+         background-attachment: fixed;
+     }
+
+     /* Cambia el fondo de main por una imagen y la ajusta */
+     main {
+         background-image: url('../../Media/Imagenes/FolioViejo.avif');
+         background-repeat: no-repeat;
+         background-size: cover;
+     }
 
 
-    .Fondo-libro {
-        margin: 10px;
-        display: flex;
-        flex-direction: column;
-        padding: 1.8rem;
-        background: url("../../Media/Imagenes/Libro-antiguo.png") no-repeat center/cover;
-        height: 310px;
-        position: relative;
-    }
+     /* Hace que los iconos de los libros se ajusten y se posicionen */
+     .iconos {
+         width: 150px;
+         height: auto;
+         position: absolute;
+         top: 45px;
+         left: 215px;
+     }
 
-    .Fondo-libro:hover {
-        height: 320px;
-    }
+     /* Hace que los libros se ajusten y se posicionen. */
+     .Fondo-libro {
+         margin: 10px;
+         display: flex;
+         flex-direction: column;
+         padding: 1.8rem;
+         background: url("../../Media/Imagenes/Libro-antiguo.png") no-repeat center/cover;
+         height: 310px;
+         position: relative;
+     }
 
-    .Fondo-libro h2,
-    .Fondo-libro h3 {
-        margin: .4rem 1.25rem 0;
-        margin-top: 0;
-        color: black;
-        text-align: left;
-        padding-right: 40%;
-    }
+     /* Hace que los libros aumenten el tamaño al pasar el cursor por encima */
+     .Fondo-libro:hover {
+         height: 320px;
+     }
 
-    .Fondo-libro p {
-        margin-top: .35rem;
-        margin: .1rem 1.25rem 0;
-        color: black;
-        font-size: .9rem;
-        padding-right: 45%;
-        line-height: 1.4;
-    }
+     /* Hace que los titulos "h2" y "h3" de los libros se ajusten y se posicionen. */
+     .Fondo-libro h2,
+     .Fondo-libro h3 {
+         margin: .4rem 1.25rem 0;
+         margin-top: 0;
+         color: black;
+         text-align: left;
+         padding-right: 40%;
+     }
 
-    .Fondo-libro a {
-        margin-top: .35rem;
-        font-weight: bold;
-        margin-bottom: 20px;
-        margin: .4rem 10px 0;
-        color: black;
-        font-size: .9rem;
-    }
+     /* Hace que los textos de los libros se ajusten y se posicionen. */
+     .Fondo-libro p {
+         margin-top: .35rem;
+         margin: .1rem 1.25rem 0;
+         color: black;
+         font-size: .9rem;
+         padding-right: 45%;
+         line-height: 1.4;
+     }
 
-    .tag {
-        display: inline-block;
-        width: fit-content;
-        padding: .15rem .5rem;
-        border: 1px solid var(--line);
-        background: #e4d3af;
-        font-size: .78rem;
-        letter-spacing: .04em;
-        text-transform: uppercase;
-        margin-bottom: 20px;
-        margin: 1rem 2rem 0;
-    }
+     /* Hace que los links de los libros se ajusten y se posicionen. */
+     .Fondo-libro a {
+         position: absolute;
+         top: 120px;
+         left: 202px;
+         text-align: center;
+         width: 150px;
+         font-weight: bold;
+         font-size: .9rem;
+         color: rgb(0, 0, 0);
+         margin: 0;
+     }
 
-    .card-grid-libros {
-        display: grid;
-        grid-template-columns: repeat(3, minmax(0, 1fr));
-        gap: 1rem;
-    }
+     /* Hace que los bloques de tomo de los libros se ajusten y se posicionen. */
+     .tomo {
+         display: inline-block;
+         width: fit-content;
+         padding: .15rem .5rem;
+         border: 1px solid var(--line);
+         background: #e4d3af;
+         font-size: .78rem;
+         letter-spacing: .04em;
+         text-transform: uppercase;
+         margin-bottom: 20px;
+         margin: 1rem 2rem 0;
+     }
 
-    .pos-izquierda {
-        position: absolute;
-        top: 120px;
-        left: 202px;
-        text-align: center;
-        width: 150px;
-        font-weight: bold;
-        font-size: .9rem;
-        color: black;
-        margin: 0;
-    }
+     /* Hace que los los libros se repitan 3 veces en horizontal y 2 en vertical. */
+     .card-grid-libros {
+         display: grid;
+         grid-template-columns: repeat(3, minmax(0, 1fr));
+         gap: 1rem;
+     }
 
-    .centro {
-        text-align: center;
-        margin: 0 auto;
-        width: 60%;
-    }
+     /* Hace que el "h2" del index se centre. */
+     .centro {
+         text-align: center;
+         margin: 0 auto;
+         width: 60%;
+     }
 
-    #titulo-bajo {
-        margin-top: 120px;
-    }
+     /* Hace que el "h1" del index se baje. */
+     #titulo-bajo {
+         margin-top: 120px;
+     }
 
+     /* Hace que la imagen de la pagina contacte se ajuste. */
+     .Img-Contacto {
+         display: block;
+         width: 400px;
+         height: auto;
+         margin: auto 820px;
+         border-radius: 5px;
+         position: absolute;
+     }
 
-    .Img-Contacto {
-        display: block;
-        width: 400px;
-        height: auto;
-        margin: auto 820px;
-        border-radius: 5px;
-        position: absolute;
-    }
+     /* da forma y efectos al logo del navegador */
+     .Logo-navegador {
+         position: absolute;
+         left: 2px;
+         top: 2px;
+         padding: -5rem -5rem;
+         width: clamp(60px, 15vw, 100px);
+         background: rgba(67, 42, 5, 0.462);
+         box-shadow: 5px 10px 10px 5px black;
+         border-radius: 10px;
+     }
 
-    html {
-        /* ------------------------- FONDO ------------------------- */
-        background-image: url('../../Media/Imagenes/Marco-Libreria.jpg');
-        /* URL-Imagen */
-        background-repeat: no-repeat;
-        /* Evitar que la imagen se repita */
-        background-size: cover;
-        /* Ajustar Imagen al Contenedor */
-        background-attachment: fixed;
-        /* Fijar Imagen */
-    }
+     /* Hace que la imagen del logo se ajuste */
+     .Logo-navegador img {
+         width: 100%;
+         height: auto;
+     }
 
-    main {
-        background-image: url('../../Media/Imagenes/FolioViejo.avif');
-        /* URL-Imagen */
-        background-repeat: no-repeat;
-        /* Evitar que la imagen se repita */
-        background-size: cover;
-        /* Ajustar Imagen al Contenedor */
-    }
+     /* Hace que la imagen del logo se haga mas pequeña al pasar el cursor por encima */
+     .Logo-navegador:hover {
+         width: 5rem;
+         transition: 0.5s;
+     }
 
-    @media (max-width: 760px) {
-        .card-grid-libros {
-            display: grid;
-            grid-template-columns: repeat(2, minmax(0, 1fr));
-            
-        }
-
-        .Fondo-libro
-        {
-        height: min-content;
-
-    }
-    }
-
-    @media (max-width: 480px) {
-        .card-grid-libros {
-            display: grid;
-            grid-template-columns: repeat(1, minmax(0, 1fr));
-            gap: 1rem;
-        }
-        .Fondo-libro {
-            height: 300px;
-        }
-        .Fondo-libro p {
-           
-        }
-    }
+     /* Ajusta la imagen del navegador y el color de su texto */
+     .site-header {
+         color: white;
+         background-image: url('../../Media/Imagenes/Navegador.jpg');
+         background-size: cover;
+         background-position: center;
+         background-size: 60% 100%;
+         background-position: center center;
+     }
