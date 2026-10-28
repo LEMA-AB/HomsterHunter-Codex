@@ -147,6 +147,12 @@
          background-size: 60% 100%;
          background-position: center center;
      }
+
+.boletin {
+    margin-bottom: 20px;
+}
+
+
      /* Ajusta las paginas a movil de 760px */
      @media (max-width: 760px) {
         .card-grid-libros {
