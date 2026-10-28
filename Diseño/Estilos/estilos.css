@@ -130,7 +130,7 @@ main {
 
 /* Ajusta el contenedor del cuadro del inicio */
 .panel {
-  background-image: url('../../Media/Imagenes/Fondo-Inicio-cuadro.jpg');
+  background-image: url('../../Media/Imagenes/Fondo-inicio-cuadro.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: 120% 130%;
