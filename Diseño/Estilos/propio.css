@@ -34,7 +34,7 @@
         margin-top: .35rem;
         margin: .1rem 1.25rem 0;
         color: black;
-        font-size: .9rem;
+        font-size: 1.2rem;
         padding-right: 45%;
         line-height: 1.4;
     }
@@ -141,6 +141,24 @@
             gap: 1rem;
         }
         .Fondo-libro {
-            height: 300px;
+            height: 200px;
+        }
+
+         .Fondo-libro:hover {
+            height: 220px;
+        }
+
+        .iconos {
+            width: 100px;
+            left: 150px;
+        }
+
+        .pos-izquierda {
+            left: 140px;
+            width: 90px;
+        }
+
+        .Fondo-libro p {
+            font-size: .6rem;
         }
     }
