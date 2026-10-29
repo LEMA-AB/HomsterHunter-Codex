@@ -165,20 +165,18 @@
          .Fondo-libro {
              height: min-content;
 
-         }
-     }
-
-     /* Ajusta las paginas a movil de 480px */
-     @media (max-width: 480px) {
-         .card-grid-libros {
-             display: grid;
-             grid-template-columns: repeat(1, minmax(0, 1fr));
-             gap: 1rem;
-         }
-
-         .Fondo-libro {
-             height: 280px;
-         }
+    }
+    }
+/* Ajusta las paginas a movil de 400px. Es copiar lo mismo que el original pero en @media con nuevas dimensiones */
+    @media (max-width: 400px) {
+        .card-grid-libros {
+            display: grid;
+            grid-template-columns: repeat(1, minmax(0, 1fr));
+            gap: 1rem;
+        }
+        .Fondo-libro {
+            height: 280px;
+        }
 
          .Fondo-libro:hover {
              height: 300px;
