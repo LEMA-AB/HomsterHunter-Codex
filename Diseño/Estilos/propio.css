@@ -1,4 +1,4 @@
-     /* Cambia el fondo de main por una imagen y la ajusta */
+     /* Ajusta el contenido de las pagina */
      html {
          background-image: url('../../Media/Imagenes/Marco-Libreria.jpg');
          background-repeat: no-repeat;
@@ -6,7 +6,7 @@
          background-attachment: fixed;
      }
 
-     /* Cambia el fondo de main por una imagen y la ajusta */
+     /* Ajusta el main */
      main {
          background-image: url('../../Media/Imagenes/FolioViejo.avif');
          background-repeat: no-repeat;
@@ -14,7 +14,7 @@
      }
 
 
-     /* Hace que los iconos de los libros se ajusten y se posicionen */
+     /* Ajusta los iconos de los libros */
      .iconos {
          width: 150px;
          height: auto;
@@ -23,7 +23,7 @@
          left: 215px;
      }
 
-     /* Hace que los libros se ajusten y se posicionen. */
+     /* Ajusta los libros. */
      .Fondo-libro {
          margin: 10px;
          display: flex;
@@ -39,7 +39,7 @@
          height: 320px;
      }
 
-     /* Hace que los titulos "h2" y "h3" de los libros se ajusten y se posicionen. */
+     /* Ajusta los titulos "h2" y "h3" de los libros. */
      .Fondo-libro h2,
      .Fondo-libro h3 {
          margin: .4rem 1.25rem 0;
@@ -48,17 +48,18 @@
          text-align: left;
          padding-right: 40%;
      }
-       /* Hace que los textos de los libros se ajusten y se posicionen. */
-    .Fondo-libro p {
-        margin-top: .35rem;
-        margin: .1rem 1.25rem 0;
-        color: black;
-        font-size: 1.2rem;
-        padding-right: 45%;
-        line-height: 1.4;
-    }
 
-     /* Hace que los links de los libros se ajusten y se posicionen. */
+     /* Ajusta los textos de los libros. */
+     .Fondo-libro p {
+         margin-top: .35rem;
+         margin: .1rem 1.25rem 0;
+         color: black;
+         font-size: 1.2rem;
+         padding-right: 45%;
+         line-height: 1.4;
+     }
+
+     /* Ajusta los links de los libros. */
      .Fondo-libro a {
          position: absolute;
          top: 120px;
@@ -147,59 +148,60 @@
          background-size: 60% 100%;
          background-position: center center;
      }
-
-.boletin {
-    margin-bottom: 20px;
-}
+    /* Ajusta la parte de contactos de aceptar notificaciones  */
+     .boletin {
+         margin-bottom: 20px;
+     }
 
 
      /* Ajusta las paginas a movil de 760px */
      @media (max-width: 760px) {
-        .card-grid-libros {
-            display: grid;
-            grid-template-columns: repeat(2, minmax(0, 1fr));
-            
-        }
+         .card-grid-libros {
+             display: grid;
+             grid-template-columns: repeat(2, minmax(0, 1fr));
 
-        .Fondo-libro
-        {
-        height: min-content;
+         }
 
-    }
-    }
-/* Ajusta las paginas a movil de 480px */
-    @media (max-width: 480px) {
-        .card-grid-libros {
-            display: grid;
-            grid-template-columns: repeat(1, minmax(0, 1fr));
-            gap: 1rem;
-        }
-        .Fondo-libro {
-            height: 280px;
-        }
+         .Fondo-libro {
+             height: min-content;
+
+         }
+     }
+
+     /* Ajusta las paginas a movil de 480px */
+     @media (max-width: 480px) {
+         .card-grid-libros {
+             display: grid;
+             grid-template-columns: repeat(1, minmax(0, 1fr));
+             gap: 1rem;
+         }
+
+         .Fondo-libro {
+             height: 280px;
+         }
 
          .Fondo-libro:hover {
-            height: 300px;
-        }
+             height: 300px;
+         }
 
-        .iconos {
-            width: 150px;
-            left: 180px;
-        }
+         .iconos {
+             width: 150px;
+             left: 180px;
+         }
 
-        .pos-izquierda {
-            left: 200px;
-            width: 90px;
-        }
+         .pos-izquierda {
+             left: 200px;
+             width: 90px;
+         }
 
-        .Fondo-libro p {
-            font-size: 1.2rem;
-        }
+         .Fondo-libro p {
+             font-size: 1.2rem;
+         }
 
-        .hero h1 {
-            font-size: clamp(1.1rem, 2.5vw, 2.5rem);
-            /* Se encoge solo */
-            color: #271e13;
-            line-height: 1.1;
-        }
-    }
+         .hero h1 {
+             font-size: clamp(1.1rem, 2.5vw, 2.5rem);
+             /* Se encoge solo */
+             color: #271e13;
+             line-height: 1.1;
+         }
+     }
